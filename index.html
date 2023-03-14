@@ -13,30 +13,34 @@
 </head>
 
 <body>
-  <button id="myBtn" title="Go to top">Lên đầu trang</button>
-    <div style="background-color:black;color:white;padding:30px">
-    </div>
+  <button id="myBtn" title="Go to top">
+
+    <i class="fas fa-angle-double-up"></i>
+
+  </button>
+  <div style="background-color:black;color:white;padding:30px">
+  </div>
   <script>
     //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function () { scrollFunction() };
     // khai báo hàm scrollFunction
     function scrollFunction() {
-        // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            //nếu lớn hơn 20px thì hiện button
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-             //nếu nhỏ hơn 20px thì ẩn button
-            document.getElementById("myBtn").style.display = "none";
-        }
+      // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        //nếu lớn hơn 20px thì hiện button
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        //nếu nhỏ hơn 20px thì ẩn button
+        document.getElementById("myBtn").style.display = "none";
+      }
     }
     //gán sự kiện click cho button
-    document.getElementById('myBtn').addEventListener("click", function(){
-        //Nếu button được click thì nhảy về đầu trang
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+    document.getElementById('myBtn').addEventListener("click", function () {
+      //Nếu button được click thì nhảy về đầu trang
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     });
-</script>
+  </script>
   <!-- Header -->
   <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
     <img class="w3-image" src="khachsan1_1.png" alt="Me" width="1500" height="600">
@@ -326,7 +330,7 @@
 
 
     <!-- Contact -->
-    
+
 
     <!-- End page content -->
   </div>
@@ -341,7 +345,7 @@
         <button class="submit-email" type="submit">Đăng ký <i class="fa fa-arrow-right"></i></button>
       </form>
     </div>
-    
+
     <div id="cuoibang" class="top-right">
       <div class="col-md-6 col">
         <h1>Bạn cần giúp đỡ?</h1>
@@ -364,7 +368,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="top-right">
       <div class="col-md-12 col">
         <h1>ĐIỀU KHOẢN &amp; QUY ĐỊNH</h1>
