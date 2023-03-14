@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css">
+  <title>Trang web du lịch nhỏ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <button id="myBtn" title="Go to top">Lên đầu trang</button>
+    <div style="background-color:black;color:white;padding:30px">
+    </div>
+  <script>
+    //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+    window.onscroll = function() {scrollFunction()};
+    // khai báo hàm scrollFunction
+    function scrollFunction() {
+        // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            //nếu lớn hơn 20px thì hiện button
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+             //nếu nhỏ hơn 20px thì ẩn button
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    //gán sự kiện click cho button
+    document.getElementById('myBtn').addEventListener("click", function(){
+        //Nếu button được click thì nhảy về đầu trang
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+</script>
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+    <img class="w3-image" src="khachsan1_1.png" alt="Me" width="1500" height="600">
+    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">CHÀO MỪNG QUÝ KHÁCH ĐẾN VỚI KHÁCH SẠN
+        <hr>LE COSY HANOI
+      </h1>
+      <h5 class="w3-hide-large" style="white-space:nowrap">CHÀO MỪNG QUÝ KHÁCH ĐẾN VỚI KHÁCH SẠN
+        <hr>LE COSY HANOI
+      </h5>
+
+    </div>
+
+    <!-- Navbar (placed at the bottom of the header image) -->
+    <div class="w3-bar w3-yellow w3-round w3-hide-small" width="1500">
+      <a href="#intro" class="w3-bar-item w3-button">Giới thiệu</a>
+      <a href="#portfolio" class="w3-bar-item w3-button">Dịch vụ</a>
+      <a href="#nhahang" class="w3-bar-item w3-button">Nhà hàng & bar</a>
+      <a href="#phonghop" class="w3-bar-item w3-button">Phòng họp & sự kiện</a>
+      <a href="#vitri" class="w3-bar-item w3-button">Vị trí</a>
+      <a href="#contact" class="w3-bar-item w3-button">Thông tin liên hệ</a>
+    </div>
+  </header>
+
+  <!-- Navbar on small screens -->
+  <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+    <div class="w3-bar w3-light-grey">
+      <a href="#intro" class="w3-bar-item w3-button">Giới thiệu</a>
+      <a href="#portfolio" class="w3-bar-item w3-button">Dịch vụ</a>
+      <a href="#nhahang" class="w3-bar-item w3-button">Nhà hàng & bar</a>
+      <a href="#phonghop" class="w3-bar-item w3-button">Phòng họp & sự kiện</a>
+      <a href="#vitri" class="w3-bar-item w3-button">Vị trí</a>
+      <a href="#contact" class="w3-bar-item w3-button">Thông tin liên hệ</a>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <div class="rgb(139, 69, 19) w3-content w3-padding-large w3-margin-top" id="intro">
+    <h1 class="w3-center">GIỚI THIỆU</h1>
+    <hr>
+    <p1>Tọa lạc tại trung tâm thương mại mới của Hà Nội cách sân bay Nội Bài 30km, vị trí của khách sạn tạo điều kiện
+      thuận lợi cho việc đi lại của khách hàng trong và ngoài nước. Không chỉ thế, từ Le Cost Hanoi quý khách có thể dễ
+      dàng di chuyển tới khu phố cổ Hà Nội, các địa điểm tham quan nổi tiếng nhộn nhịp chỉ trong vài phút.
+
+      Le Cosy Hanoi được thiết kế theo tiêu chuẩn 4 sao với phong cách hiện đại, nội thất trang trọng nhưng cũng mang
+      tính ấm áp và thân thiện. Nơi đây sẽ là điểm dừng dân lý tưởng cho những chuyến công tác, du lịch tham quan nghỉ
+      dưỡng của quý khách.
+
+      Đến với Le Cosy Hanoi, quý khách sẽ được chào đón bởi sự thân thiện của đội ngũ nhân viên tận tình và tận hưởng
+      những dịch vụ cao cấp bậc nhất khu vực, đảm bảo sẽ mang đến cho khách hàng một trải nghiệm ấn tượng không thể nào
+      quên.
+      <hr>
+    </p1>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+    <h1 class="w3-center">DỊCH VỤ</h1>
+    <p1>
+      Các phòng của khách sạn Le Cosy Hanoi được chia làm 7 hạng phòng với diện tích từ 25 - 65m2. Không gian các phòng
+      khách sạn đều mang không khí ấm cúng, hiện đại tối giản, đầy đủ tiện nghi, mỗi phòng có ban công riêng với những
+      tầm nhìn khác nhau.
+      <hr>
+    </p1>
+    <!-- Images (Portfolio) -->
+    <h3>Phòng Standard Double:</h3>
+    <p1>Diện tích: 25m2</p1>
+    <p1>và 1 giường đôi.</p1>
+    <img src="khachsan2.png" alt="Ocean" class="w3-image" width="1000" height="500">
+    <button id="button">Giá:650.000đ</button>
+    <hr>
+    <h3>Phòng Standard Twin:</h3>
+    <p1>Diện tích: 25m2 và 2 giường đơn.
+    </p1>
+    <img src="khachsan3.png" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
+    <button id="button">Giá:750.000đ</button>
+    <hr>
+    <h3>Phòng Superior Double:</h3>
+    <p1>Diện tích: 30m2 và 1 giường đôi lớn.
+    </p1>
+    <img src="khachsan4.png" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
+    <button id="button">Giá:900.000đ</button>
+    <hr>
+    <h3>Phòng Superior Twin:</h3>
+    <p1>Diện tích: 30m2 và 2 giường đơn.
+    </p1>
+    <img src="khachsan5.png" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
+    <button id="button">Giá:1.000.000đ</button>
+    <hr>
+    <h3>Phòng Deluxe King:</h3>
+    <p1>Diện tích: 35m2 và 1 giường đôi lớn.
+    </p1>
+    <img src="khachsan6.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <button id="button">Giá:1.300.000đ</button>
+    <hr>
+    <h3>Phòng Family Suite:</h3>
+    <p1>Diện tích: 50m2 (có khu vực phòng ngủ và phòng khách riêng biệt)
+      1 giường đôi và 1 giường đơn.
+    </p1>
+    <img src="khachsan7.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <img src="khachsan8.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <button id="button">Giá:2.000.000đ</button>
+    <hr>
+    <h3>Phòng Executive Suite:</h3>
+    <p1>Diện tích: 65m2 (có khu vực phòng ngủ và phòng khách riêng biệt)
+      1 giường đôi lớn.
+    </p1>
+    <img src="khachsan9.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <img src="khachsan10.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <button id="button">Giá:2.600.000đ</button>
+    <hr>
+    <h3>Dịch vụ bổ sung</h3>
+    <p1>Phòng tắm
+      Chỗ đậu xe
+      An ninh
+      Chăm sóc sức khỏe: trung tâm spa, phòng xông hơi, massage
+      Dịch vụ văn phòng: máy tính làm việc, Internet, fax, photocopy, in ấn, phòng họp, …
+      Dịch vụ giặt ủi: dịch vụ là ủi, dọn phòng hàng ngày, giặt ủi, giặt khô…
+      Lễ tân trực 24/7
+      Phục vụ phòng 24 giờ
+      Truy cập Internet miễn phí.
+    </p1>
+    <hr>
+    <h3 id="nhahang">Nhà hàng & Bar</h3>
+    <p1>Nhà hàng: Nhà hàng được xây dựng với không gian rộng rãi, sang trọng với thực đơn đa dạng các món cả u và Á, dễ
+      dàng đáp ứng nhu cầu thưởng thức của mọi đối tượng khách hàng. Bên cạnh những món ăn đơn lẻ, khách hàng có thể lựa
+      chọn các set bàn ăn được thiết kế linh hoạt theo từng dịp lễ hội, các dịp lễ đặc biệt (Tết, Valentine, Trung thu,
+      Sinh nhật….). Khách cũng có thể đặt sẵn các món trong thực đơn để tự xây dựng bữa tiệc riêng của mình.</p1>
+    <img src="khachsan11.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <hr>
+    <p1>Bar view hồ: được tổ chức tại các bể bơi, nơi đây khách có thể thưởng thức các loại rượu nhẹ hay các loại
+      cocktail, các loại trà, cà phê, nước trái cây… </p1>
+    <img src="khachsan12.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <hr>
+    <p1>Bar in night: Được chia thành các khu vực khác nhau, gồm khu bàn đứng dành cho các khách có sở thích nhảy, hòa
+      mình cùng với âm nhạc hoặc là giao lưu với bạn bè, và khu bàn ngồi dành cho những nhóm bạn hoặc những đối tượng
+      khách muốn có không gian riêng tư nhưng vẫn có thể hòa nhập với không khí náo nhiệt xung quanh. Không gian bên
+      trong phòng bar sẽ được bày trí bắt mắt cùng với các thiết bị ánh sáng 360 độ, đủ màu sắc, âm thanh lớn, trong
+      cùng với dàn DJ chuyên nghiệp, sống động, hứa hẹn sẽ mang lại những trải nghiệm tốt nhất cho khách hàng.</p1>
+    <img src="khachsan13.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <hr>
+    <h3 id="phonghop">Phòng họp & Sự kiện</h3>
+    <p1>Star Event: Phòng Star Event có diện tích lớn nhất, linh hoạt để thiết kế sáng tạo mọi chủ đề, sắp xếp, bài trí
+      mọi thứ theo sự kiện mà quý khách muốn tổ chức ví dụ như: tiệc cưới, sự kiện âm nhạc, tiệc tất niên…
+    </p1>
+    <img src="khachsan14.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <hr>
+    <p1>Le Business: Le Business là không gian phù hợp cho những buổi gặp gỡ đối tác và hội thảo, hội nghị. Với không
+      gian riêng tư, sang trọng, tiện ích, dịch vụ chuyên nghiệp, những buổi gặp gỡ, hội thảo sẽ diễn ra suôn sẻ.
+    </p1>
+    <img src="khachsan15.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <hr>
+    <h3>Ảnh 360 độ</h3>
+    <a href="https://www.360view.vn/data2/projects/vietnam/2020/melia-ba-vi-mountain-retreat/index.html?fbclid=IwAR3QeOyIdFkL_bqC2d1jWkk7OImm8N-Erp15cupJkf75IGyaXNoe3UBI6Q0"
+      target="_blank"><img src="khachsan16.png" alt="logo Tigobiz" class="w3-image w3-margin-top" width="1000"
+        height="500" /></a>
+    <hr>
+    <h3 id="vitri">Vị trí</h3>
+    <p1>Đến với Le Cosy Hanoi du khách thuận tiện di chuyển đến các địa điểm:</p1>
+    <table id="bang1" border="1">
+      <tr>
+        <th>Địa điểm</th>
+        <th>Khoảng cách</th>
+
+      </tr>
+      <tr>
+        <td>Lăng chủ tịch Hồ Chí Minh</td>
+        <td>5km</td>
+
+      </tr>
+      <tr>
+        <td>Văn Miếu - Quốc Tử Giám</td>
+        <td>4,3km</td>
+
+      </tr>
+      <tr>
+        <td>Bảo tàng Mỹ Thuật Việt Nam</td>
+        <td>4,2km</td>
+      </tr>
+      <tr>
+        <td>Cột cờ Hà Nội</td>
+        <td>4km</td>
+      </tr>
+      <tr>
+        <td>Hoàng Thành Thăng Long</td>
+        <td>4,1km</td>
+      </tr>
+      <tr>
+        <td>Cầu Long Biên</td>
+        <td>10km</td>
+      </tr>
+      <tr>
+        <td>Bảo tàng Không quân Việt Nam</td>
+        <td>1,8km</td>
+      </tr>
+      <tr>
+        <td>Hồ Gươm</td>
+        <td>4,3km</td>
+      </tr>
+      <tr>
+        <td>Phố Cổ - Hà Nội</td>
+        <td>5km</td>
+      </tr>
+      <tr>
+        <td>Chùa Trấn Quốc</td>
+        <td>6,6km </td>
+      </tr>
+    </table>
+    <hr>
+    <h3>Nhà hàng & quán cà phê</h3>
+    <table id="bang1" border="1">
+      <tr>
+        <th>Địa điểm</th>
+        <th>Khoảng cách</th>
+
+      </tr>
+      <tr>
+        <td>Furin Coffee</td>
+        <td>700m</td>
+
+      </tr>
+      <tr>
+        <td>Highlands Coffee</td>
+        <td>850m</td>
+
+      </tr>
+      <tr>
+        <td>Cafe Trà Chanh Mộc</td>
+        <td>655m</td>
+      </tr>
+      <tr>
+        <td>Tiệm Cà phê nhà Bình An</td>
+        <td>850m</td>
+      </tr>
+      <tr>
+        <td>CJ Coffee</td>
+        <td>450km</td>
+      </tr>
+      <tr>
+        <td>Bún bò chị Su</td>
+        <td>750m</td>
+      </tr>
+      <tr>
+        <td>Nhà hàng Tuyết Hương</td>
+        <td>600m</td>
+      </tr>
+      <tr>
+        <td>Nhà hàng Ngọc Châu</td>
+        <td>550m</td>
+      </tr>
+      <tr>
+        <td>Nhà hàng Long Quân Buffet Lẩu</td>
+        <td>760m</td>
+      </tr>
+      <tr>
+        <td>Lẩu Wang 134 Trần Đại Nghĩa</td>
+        <td>870m</td>
+      </tr>
+    </table>
+    <hr>
+    <h3>Phương tiện công cộng</h3>
+    <table id="bang1" border="1">
+      <tr>
+        <th>Phương tiện</th>
+        <th>Địa điểm</th>
+        <th>Khoảng cách</th>
+      </tr>
+      <tr>
+        <td>Tàu lửa</td>
+        <td>Ga Hà Nội</td>
+        <td>3,3km</td>
+      </tr>
+      <tr>
+        <td>Xe khách</td>
+        <td>Bến xe Giáp Bát</td>
+        <td>2,8km</td>
+      </tr>
+    </table>
+    <hr>
+    <h3>Vị trí địa lí tuyệt vời của Le Cosy Ha Noi</h3>
+    <a href="https://www.google.com/maps/place/M%C6%B0%E1%BB%9Dng+Thanh+Luxury+%C4%90%C3%A0+N%E1%BA%B5ng+Hotel/@16.0537175,108.2473636,17z/data=!3m1!4b1!4m9!3m8!1s0x3142177a5081b45b:0x1dba027958889476!5m2!4m1!1i2!8m2!3d16.0537175!4d108.2473636!16s%2Fg%2F11g7316zh1?hl=vi-VN"
+      target="_blank"><img src="khachsan17.png" alt="logo Tigobiz" class="w3-image w3-margin-top" width="1000"
+        height="500" /></a>
+    <hr>
+
+
+
+
+    <!-- Contact -->
+    
+
+    <!-- End page content -->
+  </div>
+
+  <div id="khuyenmai" class="footer-top">
+    <div class="top-left">
+      <h1>Nhận thông tin ưu đãi</h1>
+      <form class="contact-email-form input" method="post"
+        action="index.php?module=contact&amp;view=contact&amp;task=save_email">
+        <input required="" id="email-contact" type="email" name="email-contact"
+          placeholder="Email nhận bản tin khuyến mãi...">
+        <button class="submit-email" type="submit">Đăng ký <i class="fa fa-arrow-right"></i></button>
+      </form>
+    </div>
+    
+    <div id="cuoibang" class="top-right">
+      <div class="col-md-6 col">
+        <h1>Bạn cần giúp đỡ?</h1>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="col-md-6 col-6">
+          <div class="left">
+            <p><a href="#">Quản lý các đặt phòng</a></p>
+            <p><a href="#">Hỗ trợ</a></p>
+          </div>
+          <br>
+          <div class="right">
+            <p>Bạn muốn đặt chỗ?</p>
+            <a href="tel:1900 1833"><img src="https://booking.muongthanh.com//images/hotline-trang.svg" alt="">1900
+              1833</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-6">
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="top-right">
+      <div class="col-md-12 col">
+        <h1>ĐIỀU KHOẢN &amp; QUY ĐỊNH</h1>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="col-md-12 col-12">
+          <div class="left">
+            <p><a href="/tin-tuc/dieu-khoan-chung">Điều khoản chung</a></p>
+            <p><a href="/tin-tuc/quy-dinh-chung">Quy định chung</a></p>
+            <p><a href="/tin-tuc/quy-dinh-ve-thanh-toan">Quy định về thanh toán</a></p>
+            <p><a href="/tin-tuc/quy-dinh-ve-xac-nhan-thong-tin-dat-phong">Quy định về xác nhận thông tin đặt phòng</a>
+            </p>
+            <p><a href="/tin-tuc/chinh-sach-giai-quyet-khieu-nai">Chính sách giải quyết tranh chấp</a></p>
+            <p><a href="/tin-tuc/chinh-sach-quyen-rieng-tu">Chính sách quyền riêng tư</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-top">
+      <div class="dkkd-info">
+        <div class="col-md-12">
+          <p class="title">Số ĐKKD</p>
+          <p>0106011932</p>
+          <p>Đăng ký lần đầu ngày 15/10/2012</p>
+          <p>Đăng ký thay đổi lần thứ 15 ngày 16/8/2022.</p>
+          <a href="http://online.gov.vn/Home/WebDetails/98209"><img alt="Mường Thanh - Đảm bảo giá tốt nhất"
+              style="width: 145px;"
+              src="https://booking.muongthanh.com/images/logo-da-thong-bao-website-voi-bo-cong-thuong.png"></a>
+        </div>
+
+      </div>
+      <div class="dkkd-info">
+        <div class="col-md-12">
+          <p class="title">Nơi cấp:</p>
+          <p>Sở Kế hoạch và Đầu tư Tỉnh Điện Biên </p>
+          <p class="title">Lĩnh vực kinh doanh:</p>
+          <p>Khách sạn, căn hộ kinh doanh dịch vụ lưu trú ngắn ngày; khu du lịch sinh thái, khu vui chơi giải trí, sân
+            golf</p>
+        </div>
+      </div>
+      <div class="dkkd-info">
+        <div class="col-md-12">
+          <p class="title">Trụ sở:</p>
+          <p>Số nhà 25, Tổ dân phố 21, Phường Him Lam, Thành phố Điện Biên Phủ, Tỉnh Điện Biên, Việt Nam </p>
+          <p class="title">Email:</p>
+          <p><a href="mailto:info@muongthanh.vn">info@muongthanh.vn</a></p>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
