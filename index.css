@@ -117,7 +117,7 @@ body {
 @media all and (max-width: 1024px) {}
 
 #button {
-  width: 100%;
+  width: 20%;
   height: 50px;
   margin: auto;
   -webkit-transition-duration: 0.4s;
