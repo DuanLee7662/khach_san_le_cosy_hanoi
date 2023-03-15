@@ -1,5 +1,5 @@
 .p1 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -12,12 +12,12 @@ button {
 }
 
 #intro {
-  color: rgb(250, 250, 250);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
 #portfolio {
-  color: rgb(250, 250, 250);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -27,7 +27,7 @@ p {
 }
 
 h1 {
-  color: rgb(250, 250, 250);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -37,7 +37,8 @@ h1 {
 }
 
 body {
-  background-color: rgb(139, 69, 19);
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 #bttop {
