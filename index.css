@@ -2,6 +2,9 @@
   color: rgb(0, 0, 0);
   text-align: left;
 }
+#dichvu{
+  text-align: center;
+}
 #bar{
   font-size: 20px;
 }
@@ -16,8 +19,11 @@
 }
 
 button {
-  background-color: rgb(247, 209, 84);
+  color: white;
   text-align: center;
+}
+#button:hover {
+  color: rgb(247, 209, 84);
 }
 
 #intro {
@@ -71,8 +77,8 @@ body {
 }
 
 #bang1 {
-  color: black;
-  background-color: rgb(247, 209, 84);
+  color: white;
+  background-color: #795548;
   text-align: center;
   width: 100%;
 }
@@ -132,11 +138,6 @@ body {
   -webkit-transition-duration: 0.4s;
   /* Safari */
   transition-duration: 0.4s;
-}
-
-#button:hover {
-  background-color: rgb(88, 37, 139);
-  color: rgb(247, 209, 84);
 }
 
 #hinhtron {
