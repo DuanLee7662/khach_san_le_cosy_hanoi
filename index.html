@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="control.js">
   <title>Khách sạn Le Cosy Hanoi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
@@ -18,59 +19,14 @@
   <!-- Your Plugin chat code -->
   <div id="fb-customer-chat" class="fb-customerchat">
   </div>
-
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "113547045006375");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
-
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml            : true,
-        version          : 'v16.0'
-      });
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
   <!-- back to top -->
   <button id="myBtn" title="Go to top">
 
     <i class="fas fa-angle-double-up" style="font-size: 40px;"></i>
 
   </button>
-  <script>
 
-    
-    //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
-    window.onscroll = function () { scrollFunction() };
-    // khai báo hàm scrollFunction
-    function scrollFunction() {
-      // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        //nếu lớn hơn 20px thì hiện button
-        document.getElementById("myBtn").style.display = "block";
-      } else {
-        //nếu nhỏ hơn 20px thì ẩn button
-        document.getElementById("myBtn").style.display = "none";
-      }
-    }
-    //gán sự kiện click cho button
-    document.getElementById('myBtn').addEventListener("click", function () {
-      //Nếu button được click thì nhảy về đầu trang
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    });
-  </script>
+  <script src="control.js"></script>
   <!-- Header -->
   <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
     <img class="w3-image" src="khachsan1_1.png" alt="Me" width="1500" height="600">
