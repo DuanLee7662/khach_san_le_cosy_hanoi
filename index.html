@@ -2,23 +2,55 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>Khách sạn Le Cosy Hanoi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
+  <!-- Messenger Plugin chat Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "113547045006375");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v16.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- back to top -->
   <button id="myBtn" title="Go to top">
 
     <i class="fas fa-angle-double-up"></i>
 
   </button>
   <script>
+
+    
     //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
     window.onscroll = function () { scrollFunction() };
     // khai báo hàm scrollFunction
@@ -44,34 +76,34 @@
     <img class="w3-image" src="khachsan1_1.png" alt="Me" width="1500" height="600">
 
     <!-- Navbar (placed at the bottom of the header image) -->
-    <div id="bar" class="w3-brown w3-round w3-hide-small" width="1500">
-      <li><a href="#intro" class="w3-bar-item w3-button" title="Giới thiệu"><b>Giới thiệu</b></a></li>
-      <li><a href="#hangphong" class="w3-bar-item w3-button" title="Hạng phòng"><b>Hạng phòng</b></a></li>
-      <li><a href="#dichvu" class="w3-bar-item w3-button" title="Dịch vụ"><b>Dịch vụ</b></a></li>
-      <li><a href="#nhahang" class="w3-bar-item w3-button" title="Nhà hàng và bar"><b>Nhà hàng & bar</b></a></li>
-      <li><a href="#phonghop" class="w3-bar-item w3-button" title="Phòng họp và sự kiện"><b>Phòng họp & sự kiện</b></a>
-      </li>
-      <li><a href="#anh360" class="w3-bar-item w3-button" title="Ảnh 360°"><b>Ảnh 360°</b></a></li>
-      <li><a href="#vitri" class="w3-bar-item w3-button" title="Vị trí"><b>Vị trí</b></a></li>
-      <li><a href="#khuyenmai" class="w3-bar-item w3-button" title="Ưu đãi"><b>Ưu đãi</b></a></li>
+    <div id="bar" class="w3-brown" width="1500">
+      <a href="#intro" class="w3-button" title="Giới thiệu"><b>Giới thiệu</b></a>
+      <a href="#hangphong" class="w3-button" title="Hạng phòng"><b>Hạng phòng</b></a>
+      <a href="#dichvu" class="w3-button" title="Dịch vụ"><b>Dịch vụ</b></a>
+      <a href="#nhahang" class="w3-button" title="Nhà hàng và bar"><b>Nhà hàng & bar</b></a>
+      <a href="#phonghop" class="w3-button" title="Phòng họp và sự kiện"><b>Phòng họp & sự kiện</b></a>
+
+      <a href="#anh360" class="w3-button" title="Ảnh 360°"><b>Ảnh 360°</b></a>
+      <a href="#vitri" class="w3-button" title="Vị trí"><b>Vị trí</b></a>
+      <a href="#khuyenmai" class="w3-button" title="Ưu đãi"><b>Ưu đãi</b></a>
     </div>
   </header>
 
   <!-- Navbar on small screens -->
-  <ul>
-    <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-      <li><a href="#intro" class="w3-bar-item w3-button" title="Giới thiệu"><b>Giới thiệu</b></a></li>
-      <li><a href="#hangphong" class="w3-bar-item w3-button" title="Hạng phòng"><b>Hạng phòng</b></a>
-      </li>
-      <li><a href="#dichvu" class="w3-bar-item w3-button" title="Dịch vụ"><b>Dịch vụ</b></a></li>
-      <li><a href="#nhahang" class="w3-bar-item w3-button" title="Nhà hàng và bar"><b>Nhà hàng & bar</b></a></li>
-      <li><a href="#phonghop" class="w3-bar-item w3-button" title="Phòng họp và sự kiện"><b>Phòng họp & sự kiện</b></a>
-      </li>
-      <li><a href="#anh360" class="w3-bar-item w3-button" title="Ảnh 360°"><b>Ảnh 360°</b></a></li>
-      <li><a href="#vitri" class="w3-bar-item w3-button" title="Vị trí"><b>Vị trí</b></a></li>
-      <li><a href="#khuyenmai" class="w3-bar-item w3-button" title="Ưu đãi"><b>Ưu đãi</b></a></li>
-    </div>
-  </ul>
+
+  <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+    <a href="#intro" class="w3-button" title="Giới thiệu"><b>Giới thiệu</b></a>
+    <a href="#hangphong" class="w3-button" title="Hạng phòng"><b>Hạng phòng</b></a>
+
+    <a href="#dichvu" class="w3-button" title="Dịch vụ"><b>Dịch vụ</b></a>
+    <a href="#nhahang" class="w3-button" title="Nhà hàng và bar"><b>Nhà hàng & bar</b></a>
+    <a href="#phonghop" class="w3-button" title="Phòng họp và sự kiện"><b>Phòng họp & sự kiện</b></a>
+
+    <a href="#anh360" class="w3-button" title="Ảnh 360°"><b>Ảnh 360°</b></a>
+    <a href="#vitri" class="w3-button" title="Vị trí"><b>Vị trí</b></a>
+    <a href="#khuyenmai" class="w3-button" title="Ưu đãi"><b>Ưu đãi</b></a>
+  </div>
+
 
   <!-- Intro -->
   <div class="w3-content" id="justify">
@@ -112,35 +144,35 @@
     <p1>Diện tích: 25m2 và 1 giường đôi</p1>
     <p>Giá: 650.000đ</p>
     <img src="khachsan2.png" alt="Ocean" class="w3-image" width="1000" height="500">
-    <button id="button" title="Đặt phòng" class="w3-brown"><b>Đặt phòng</b></button>
+    <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
     <h3>Phòng Standard Twin:</h3>
     <p1>Diện tích: 25m2 và 2 giường đơn
     </p1>
     <p>Giá: 750.000đ</p>
     <img src="khachsan3.png" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
-    <button id="button" title="Đặt phòng" class="w3-brown"><b>Đặt phòng</b></button>
+    <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
     <h3>Phòng Superior Double:</h3>
     <p1>Diện tích: 30m2 và 1 giường đôi lớn
     </p1>
     <p>Giá: 900.000đ</p>
     <img src="khachsan4.png" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
-    <button id="button" title="Đặt phòng" class="w3-brown"><b>Đặt phòng</b></button>
+    <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
     <h3>Phòng Superior Twin:</h3>
     <p1>Diện tích: 30m2 và 2 giường đơn
     </p1>
     <p>Giá: 1.000.000đ</p>
     <img src="khachsan5.png" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-    <button id="button" title="Đặt phòng" class="w3-brown"><b>Đặt phòng</b></button>
+    <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
     <h3>Phòng Deluxe King:</h3>
     <p1>Diện tích: 35m2 và 1 giường đôi lớn
     </p1>
     <p>Giá: 1.300.000đ</p>
     <img src="khachsan6.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
-    <button id="button" title="Đặt phòng" class="w3-brown"><b>Đặt phòng</b></button>
+    <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
     <h3>Phòng Family Suite:</h3>
     <p1>Diện tích: 50m2 (có khu vực phòng ngủ và phòng khách riêng biệt)
@@ -149,7 +181,7 @@
     <p>Giá: 2.000.000đ</p>
     <img src="khachsan7.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
     <img src="khachsan8.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
-    <button id="button" title="Đặt phòng" class="w3-brown"><b>Đặt phòng</b></button>
+    <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
     <h3>Phòng Executive Suite:</h3>
     <p1>Diện tích: 65m2 (có khu vực phòng ngủ và phòng khách riêng biệt)
@@ -158,7 +190,7 @@
     <p>Giá: 2.600.000đ</p>
     <img src="khachsan9.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
     <img src="khachsan10.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
-    <button id="button" title="Đặt phòng" class="w3-brown"><b>Đặt phòng</b></button>
+    <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
     <h1 class="w3-center" id="dichvu">DỊCH VỤ</h1>
     <p1>- Phòng tắm</p1>
@@ -362,7 +394,7 @@
         action="index.php?module=contact&amp;view=contact&amp;task=save_email">
         <input required="" id="email-contact" type="email" name="email-contact"
           placeholder="Email nhận bản tin khuyến mãi...">
-        <button class="submit-email" type="submit" style="background-color: #795548;cursor:pointer">Đăng ký <i
+        <button class="submit-email w3-brown" type="submit" style="cursor:pointer">Đăng ký <i
             class="fa fa-arrow-right"></i></button>
       </form>
     </div>
