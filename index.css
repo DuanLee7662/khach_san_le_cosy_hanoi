@@ -2,12 +2,21 @@
   color: rgb(0, 0, 0);
   text-align: left;
 }
-#dichvu{
-  text-align: center;
+
+li{
+  float: left;
 }
 #bar{
   font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
 }
+
+#dichvu{
+  text-align: center;
+}
+
 #p2{
   text-align: left;
 }
