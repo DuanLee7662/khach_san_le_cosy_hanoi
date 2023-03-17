@@ -27,22 +27,42 @@
   <!-- Header -->
   <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
     <img class="w3-image" src="images/khachsan1_1.png" alt="Me" width="1500" height="600">
+    <ul>
+      <li><a href="#intro" style="font-size: 20px;">Giới thiệu</a></li>
+      <li class="dropdown">
+        <a class="dropbtn" href="#hangphong" style="font-size: 20px;">Hạng phòng</a>
+        <div class="dropdown-content">
+          <a href="#1">Phòng Standard Double</a>
+          <a href="#2">Phòng Standard Twin</a>
+          <a href="#3">Phòng Superior Double</a>
+          <a href="#4">Phòng Superior Twin</a>
+          <a href="#5">Phòng Deluxe King</a>
+          <a href="#6">Phòng Family Suite</a>
+          <a href="#7">Phòng Executive Suite</a>
+        </div>
+      </li>
+      <li><a href="#dichvu" style="font-size: 20px;">Dịch vụ</a></li>
 
-    <!-- Navbar (placed at the bottom of the header image) -->
-    <div id="bar" class="w3-brown" width="1500">
-      <a href="#intro" class="w3-button" title="Giới thiệu"><b>Giới thiệu</b></a>
-      <a href="#hangphong" class="w3-button" title="Hạng phòng"><b>Hạng phòng</b></a>
-      <a href="#dichvu" class="w3-button" title="Dịch vụ"><b>Dịch vụ</b></a>
-      <a href="#nhahang" class="w3-button" title="Nhà hàng và bar"><b>Nhà hàng & bar</b></a>
-      <a href="#phonghop" class="w3-button" title="Phòng họp và sự kiện"><b>Phòng họp & sự kiện</b></a>
-
-      <a href="#anh360" class="w3-button" title="Ảnh 360°"><b>Ảnh 360°</b></a>
-      <a href="#vitri" class="w3-button" title="Vị trí"><b>Vị trí</b></a>
-      <!-- <a href="#khuyenmai" class="w3-button" title="Ưu đãi"><b>Ưu đãi</b></a> -->
-    </div>
+      <li class="dropdown">
+        <a class="dropbtn" href="#nhahang" style="font-size: 20px;">Nhà hàng & bar</a>
+        <div class="dropdown-content">
+          <a href="#8">Nhà hàng</a>
+          <a href="#9">Bar view hồ</a>
+          <a href="#10">Bar in night</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropbtn" href="#phonghop" style="font-size: 20px;">Phòng họp & sự kiện</a>
+        <div class="dropdown-content">
+          <a href="#11">Star Event</a>
+          <a href="#12">Le Business</a>
+        </div>
+      </li>
+      <li><a href="#anh360" style="font-size: 20px;">Ảnh 360</a></li>
+      <li><a href="#vitri" style="font-size: 20px;">Vị trí</a></li>
+    </ul>
   </header>
 
-  <!-- Navbar on small screens -->
 
 
   <!-- Intro -->
@@ -75,41 +95,41 @@
       tầm nhìn khác nhau.
       <hr>
     </p1>
-    <h3>Phòng Standard Double:</h3>
+    <h3 id="1">Phòng Standard Double:</h3>
     <p1>Diện tích: 25m2 và 1 giường đôi</p1>
     <p>Giá: 650.000đ</p>
     <img src="images/khachsan2.png" alt="Ocean" class="w3-image" width="1000" height="500">
     <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
-    <h3>Phòng Standard Twin:</h3>
+    <h3 id="2">Phòng Standard Twin:</h3>
     <p1>Diện tích: 25m2 và 2 giường đơn
     </p1>
     <p>Giá: 750.000đ</p>
     <img src="images/khachsan3.png" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
     <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
-    <h3>Phòng Superior Double:</h3>
+    <h3 id="3">Phòng Superior Double:</h3>
     <p1>Diện tích: 30m2 và 1 giường đôi lớn
     </p1>
     <p>Giá: 900.000đ</p>
     <img src="images/khachsan4.png" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
     <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
-    <h3>Phòng Superior Twin:</h3>
+    <h3 id="4">Phòng Superior Twin:</h3>
     <p1>Diện tích: 30m2 và 2 giường đơn
     </p1>
     <p>Giá: 1.000.000đ</p>
     <img src="images/khachsan5.png" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
     <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
-    <h3>Phòng Deluxe King:</h3>
+    <h3 id="5">Phòng Deluxe King:</h3>
     <p1>Diện tích: 35m2 và 1 giường đôi lớn
     </p1>
     <p>Giá: 1.300.000đ</p>
     <img src="images/khachsan6.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
     <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
-    <h3>Phòng Family Suite:</h3>
+    <h3 id="6">Phòng Family Suite:</h3>
     <p1>Diện tích: 50m2 (có khu vực phòng ngủ và phòng khách riêng biệt)
       1 giường đôi và 1 giường đơn
     </p1>
@@ -118,7 +138,7 @@
     <img src="images/khachsan8.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
     <button title="Đặt phòng" id="button"><b>Đặt phòng</b></button>
     <hr>
-    <h3>Phòng Executive Suite:</h3>
+    <h3 id="7">Phòng Executive Suite:</h3>
     <p1>Diện tích: 65m2 (có khu vực phòng ngủ và phòng khách riêng biệt)
       1 giường đôi lớn
     </p1>
@@ -140,7 +160,7 @@
     </p1>
     <hr>
     <h1 class="w3-center" id="nhahang">NHÀ HÀNG & BAR</h1>
-    <p1><b>Nhà hàng:</b> Nhà hàng được xây dựng với không gian rộng rãi, sang trọng với thực đơn đa dạng các món cả u
+    <p1 id="8"><b>Nhà hàng:</b> Nhà hàng được xây dựng với không gian rộng rãi, sang trọng với thực đơn đa dạng các món cả u
       và
       Á, dễ
       dàng đáp ứng nhu cầu thưởng thức của mọi đối tượng khách hàng. Bên cạnh những món ăn đơn lẻ, khách hàng có thể
@@ -150,13 +170,13 @@
       Sinh nhật….). Khách cũng có thể đặt sẵn các món trong thực đơn để tự xây dựng bữa tiệc riêng của mình.</p1>
     <img src="images/khachsan11.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
     <hr>
-    <p1><b>Bar view hồ:</b> được tổ chức tại các bể bơi, nơi đây khách có thể thưởng thức các loại rượu nhẹ hay các
+    <p1 id="9"><b>Bar view hồ:</b> được tổ chức tại các bể bơi, nơi đây khách có thể thưởng thức các loại rượu nhẹ hay các
       loại
       cocktail, các</p1>
     <p> loại trà, cà phê, nước trái cây…</p>
     <img src="images/khachsan12.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
     <hr>
-    <p1><b>Bar in night:</b> Được chia thành các khu vực khác nhau, gồm khu bàn đứng dành cho các khách có sở thích
+    <p1 id="10"><b>Bar in night:</b> Được chia thành các khu vực khác nhau, gồm khu bàn đứng dành cho các khách có sở thích
       nhảy, hòa
       mình cùng với âm nhạc hoặc là giao lưu với bạn bè, và khu bàn ngồi dành cho những nhóm bạn hoặc những đối tượng
       khách muốn có không gian riêng tư nhưng vẫn có thể hòa nhập với không khí náo nhiệt xung quanh. Không gian bên
@@ -166,13 +186,13 @@
     <img src="images/khachsan13.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
     <hr>
     <h1 class="w3-center" id="phonghop">PHÒNG HỌP & SỰ KIỆN</h1>
-    <p1><b>Star Event:</b> Phòng Star Event có diện tích lớn nhất, linh hoạt để thiết kế sáng tạo mọi chủ đề, sắp xếp,
+    <p1 id="11"><b>Star Event:</b> Phòng Star Event có diện tích lớn nhất, linh hoạt để thiết kế sáng tạo mọi chủ đề, sắp xếp,
       bài trí
       mọi thứ theo sự kiện mà quý khách muốn tổ chức ví dụ như: tiệc cưới, sự kiện âm nhạc, tiệc tất niên…
     </p1>
     <img src="images/khachsan14.png" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
     <hr>
-    <p1><b>Le Business:</b> Le Business là không gian phù hợp cho những buổi gặp gỡ đối tác và hội thảo, hội nghị. Với
+    <p1 id="12"><b>Le Business:</b> Le Business là không gian phù hợp cho những buổi gặp gỡ đối tác và hội thảo, hội nghị. Với
       không
       gian riêng tư, sang trọng, tiện ích, dịch vụ chuyên nghiệp, những buổi gặp gỡ, hội thảo sẽ diễn ra suôn sẻ.
     </p1>
