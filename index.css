@@ -1,3 +1,55 @@
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  background-color: #795548;
+  display: inline-block;
+}
+li:hover{
+  background-color: #555;
+}
+li{
+  display: inline-block;
+  padding: 10px;
+}
+li a, .dopbtn{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn{
+  background-color: #555;
+}
+
+/* menu da cap */
+
+li .dropdown{
+  display: inline-block;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #795548;
+  min-width: none;
+  box-shadow: inset;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+
+
 .p1 {
   color: rgb(0, 0, 0);
   text-align: left;
@@ -68,6 +120,7 @@ h1 {
 body {
   background-color: rgb(255, 255, 255);
   color: black;
+  text-align: center;
 }
 
 #bttop {
